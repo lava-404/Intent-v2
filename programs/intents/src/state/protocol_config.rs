@@ -1,7 +1,7 @@
-use anchor_lang::{AnchorDeserialize, AnchorSerialize, prelude::Pubkey};
+use anchor_lang::prelude::*;
 
-#[derive(AnchorSerialize,
-  AnchorDeserialize,)]
+#[account]
+#[derive(InitSpace)]
 pub struct ProtocolConfig {
   pub admin: Pubkey,
   pub max_intent_duration: i64,

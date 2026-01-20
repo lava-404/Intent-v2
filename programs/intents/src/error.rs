@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
 #[error_code]
-pub enum ErrorCode {
+pub enum IntentError {
     #[msg("Token amount must be greater than zero")]
     InvalidAmount,
 

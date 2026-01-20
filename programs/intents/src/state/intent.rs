@@ -16,8 +16,9 @@ pub enum IntentStatus {
   Expired
 }
 
-#[derive(InitSpace, AnchorSerialize,
-  AnchorDeserialize,)]
+#[account]
+#[derive(InitSpace)]
+
 pub struct Intent {
   pub creator: Pubkey,
   pub token_a_mint: Pubkey,
