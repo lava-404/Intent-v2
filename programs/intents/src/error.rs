@@ -22,4 +22,11 @@ pub enum IntentError {
 
     #[msg("Invalid Recipient")]
     InvalidRecipient,
+
+    #[msg("Incorrect Owner")]
+    IncorrectOwner,
+
+    #[msg("Intent Not Open Anymore")]
+    IntentNotOpen,
+
 }

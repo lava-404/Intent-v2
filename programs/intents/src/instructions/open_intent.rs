@@ -47,7 +47,7 @@ pub struct OpenIntent<'info> {
     pub associated_token_program: Program<'info, AssociatedToken>,
 }
 
-pub fn open_intent(
+pub fn open_intent (
     ctx: Context<OpenIntent>,
     token_a_amt: u64,
     recipient: Pubkey,
@@ -113,5 +113,5 @@ pub fn open_intent(
         &ctx.accounts.token_program,
     );
 
-    Ok(())
+  Ok(())
 }
